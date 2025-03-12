@@ -25,6 +25,7 @@ const initialState = {
 };
 
 const reducer = (state = initialState, action) => {
+  console.log("\nReducer called with action:", action.type);
   switch (action.type) {
     case ORDER_PIZZA:
       console.log("\nOrdering Pizaa...... Thanks for waiting ;)");
@@ -57,8 +58,17 @@ const unsubscribe = store.subscribe(() =>
 );
 
 store.dispatch(orderPizza());
+store.dispatch(orderPizza());
+store.dispatch(orderPizza());
 store.dispatch(cancelOrder());
 
 unsubscribe();
 
+//IMP*  UNSUBSCRIBED ... so no updates in application!! ( state in updated internally )
+
 store.dispatch(orderPizza());
+console.log(
+  "State after dispatching post-unsubscribe: ",
+  store.getState(),
+  "\n"
+);
