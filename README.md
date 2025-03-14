@@ -1,9 +1,9 @@
 ## REDUX Intro
 
-![intro definitions](<redux intro.jpg>)
+![intro definitions](assets/redux_intro.jpg)
 
 ## REDUX flow
 
-![alt text](<redux representation.jpg>)
+![alt text](assets/redux_representation.jpg)
 
 Thanks to freecodecamp

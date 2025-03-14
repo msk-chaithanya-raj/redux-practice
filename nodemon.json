@@ -1,0 +1,7 @@
+{
+  "watch": [
+    "./redux_vanillaJS/intro_to_store.js",
+    "./redux_vanillaJS/multiple_reducers.js"
+  ],
+  "exec": "node ./redux_vanillaJS/intro_to_store.js & node ./redux_vanillaJS/multiple_reducers.js"
+}
