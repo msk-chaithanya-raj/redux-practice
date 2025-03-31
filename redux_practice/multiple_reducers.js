@@ -32,7 +32,7 @@ function cancelOrderOrange() {
     type: CANCEL_ORDER_ORANGE,
   };
 }
-// Reducer
+
 const promegranateStockState = {
   pomegranteStock: 50,
 };
@@ -40,6 +40,7 @@ const orangeStockState = {
   orangeStock: 20,
 };
 
+// Reducer
 const promegranateStockReducer = (state = promegranateStockState, action) => {
   switch (action.type) {
     case ORDER_POMEGRANATE:
@@ -108,7 +109,7 @@ store.dispatch(cancelOrderOrange());
 
 unsubscribe();
 
-//IMP*  UNSUBSCRIBED ... so no updates in application!! ( state in updated internally )
+//IMP*  UNSUBSCRIBED ... so no updates in application!! ( state is updated internally )
 
 store.dispatch(orderPomegranate());
 console.log(
